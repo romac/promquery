@@ -1,0 +1,13 @@
+[package]
+name = "promquery"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.17", features = ["derive"] }
+owo-colors = "4.1.0"
+pluralizer = "0.4.0"
+prometheus-parse = "0.2.5"
+reqwest = "0.12.7"
+textplots = "0.8.6"
+tokio = { version = "1.40.0", features = ["full"] }

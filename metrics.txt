@@ -1,0 +1,914 @@
+# HELP malachite_consensus_finalized_blocks Number of blocks finalized.
+# TYPE malachite_consensus_finalized_blocks counter
+malachite_consensus_finalized_blocks_total 1901
+# HELP malachite_consensus_finalized_txes Number of transactions finalized.
+# TYPE malachite_consensus_finalized_txes counter
+malachite_consensus_finalized_txes_total 1901000
+# HELP malachite_consensus_time_per_block Time taken to finalize a block, in seconds.
+# TYPE malachite_consensus_time_per_block histogram
+malachite_consensus_time_per_block_sum 2517.3830000000009
+malachite_consensus_time_per_block_count 1901
+malachite_consensus_time_per_block_bucket{le="0.0"} 0
+malachite_consensus_time_per_block_bucket{le="0.1"} 0
+malachite_consensus_time_per_block_bucket{le="0.2"} 0
+malachite_consensus_time_per_block_bucket{le="0.30000000000000007"} 0
+malachite_consensus_time_per_block_bucket{le="0.4"} 0
+malachite_consensus_time_per_block_bucket{le="0.5"} 0
+malachite_consensus_time_per_block_bucket{le="0.6000000000000001"} 0
+malachite_consensus_time_per_block_bucket{le="0.7000000000000001"} 0
+malachite_consensus_time_per_block_bucket{le="0.8"} 0
+malachite_consensus_time_per_block_bucket{le="0.9"} 0
+malachite_consensus_time_per_block_bucket{le="1.0"} 0
+malachite_consensus_time_per_block_bucket{le="1.1"} 0
+malachite_consensus_time_per_block_bucket{le="1.2000000000000002"} 1303
+malachite_consensus_time_per_block_bucket{le="1.3"} 1896
+malachite_consensus_time_per_block_bucket{le="1.4000000000000002"} 1896
+malachite_consensus_time_per_block_bucket{le="1.5"} 1896
+malachite_consensus_time_per_block_bucket{le="1.6"} 1896
+malachite_consensus_time_per_block_bucket{le="1.7000000000000002"} 1896
+malachite_consensus_time_per_block_bucket{le="1.8"} 1896
+malachite_consensus_time_per_block_bucket{le="1.9000000000000002"} 1896
+malachite_consensus_time_per_block_bucket{le="+Inf"} 1901
+# HELP malachite_consensus_time_per_step Time taken for a step in a round, in seconds.
+# TYPE malachite_consensus_time_per_step histogram
+malachite_consensus_time_per_step_sum{step="Propose"} 2194.5604781479985
+malachite_consensus_time_per_step_count{step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="0.0",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.1",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.2",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.30000000000000007",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.4",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.5",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.6000000000000001",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.7000000000000001",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.8",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="0.9",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="1.0",step="Propose"} 0
+malachite_consensus_time_per_step_bucket{le="1.1",step="Propose"} 380
+malachite_consensus_time_per_step_bucket{le="1.2000000000000002",step="Propose"} 1822
+malachite_consensus_time_per_step_bucket{le="1.3",step="Propose"} 1897
+malachite_consensus_time_per_step_bucket{le="1.4000000000000002",step="Propose"} 1897
+malachite_consensus_time_per_step_bucket{le="1.5",step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="1.6",step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="1.7000000000000002",step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="1.8",step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="1.9000000000000002",step="Propose"} 1901
+malachite_consensus_time_per_step_bucket{le="+Inf",step="Propose"} 1901
+malachite_consensus_time_per_step_sum{step="Commit"} 2.6496599639999958
+malachite_consensus_time_per_step_count{step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.0",step="Commit"} 0
+malachite_consensus_time_per_step_bucket{le="0.1",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.2",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.30000000000000007",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.4",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.5",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.6000000000000001",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.7000000000000001",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.8",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.9",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.0",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.1",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.2000000000000002",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.3",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.4000000000000002",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.5",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.6",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.7000000000000002",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.8",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.9000000000000002",step="Commit"} 1901
+malachite_consensus_time_per_step_bucket{le="+Inf",step="Commit"} 1901
+malachite_consensus_time_per_step_sum{step="Prevote"} 62.45036247600007
+malachite_consensus_time_per_step_count{step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.0",step="Prevote"} 0
+malachite_consensus_time_per_step_bucket{le="0.1",step="Prevote"} 1520
+malachite_consensus_time_per_step_bucket{le="0.2",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.30000000000000007",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.4",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.5",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.6000000000000001",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.7000000000000001",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.8",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="0.9",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.0",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.1",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.2000000000000002",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.3",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.4000000000000002",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.5",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.6",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.7000000000000002",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.8",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="1.9000000000000002",step="Prevote"} 1901
+malachite_consensus_time_per_step_bucket{le="+Inf",step="Prevote"} 1901
+malachite_consensus_time_per_step_sum{step="Precommit"} 13.02931551300001
+malachite_consensus_time_per_step_count{step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.0",step="Precommit"} 0
+malachite_consensus_time_per_step_bucket{le="0.1",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.2",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.30000000000000007",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.4",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.5",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.6000000000000001",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.7000000000000001",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.8",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="0.9",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.0",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.1",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.2000000000000002",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.3",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.4000000000000002",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.5",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.6",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.7000000000000002",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.8",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="1.9000000000000002",step="Precommit"} 1901
+malachite_consensus_time_per_step_bucket{le="+Inf",step="Precommit"} 1901
+# HELP malachite_consensus_block_tx_count Block size in terms of # of transactions.
+# TYPE malachite_consensus_block_tx_count histogram
+malachite_consensus_block_tx_count_sum 1901000.0
+malachite_consensus_block_tx_count_count 1901
+malachite_consensus_block_tx_count_bucket{le="0.0"} 0
+malachite_consensus_block_tx_count_bucket{le="32.0"} 0
+malachite_consensus_block_tx_count_bucket{le="64.0"} 0
+malachite_consensus_block_tx_count_bucket{le="96.0"} 0
+malachite_consensus_block_tx_count_bucket{le="128.0"} 0
+malachite_consensus_block_tx_count_bucket{le="160.0"} 0
+malachite_consensus_block_tx_count_bucket{le="192.0"} 0
+malachite_consensus_block_tx_count_bucket{le="224.0"} 0
+malachite_consensus_block_tx_count_bucket{le="256.0"} 0
+malachite_consensus_block_tx_count_bucket{le="288.0"} 0
+malachite_consensus_block_tx_count_bucket{le="320.0"} 0
+malachite_consensus_block_tx_count_bucket{le="352.0"} 0
+malachite_consensus_block_tx_count_bucket{le="384.0"} 0
+malachite_consensus_block_tx_count_bucket{le="416.0"} 0
+malachite_consensus_block_tx_count_bucket{le="448.0"} 0
+malachite_consensus_block_tx_count_bucket{le="480.0"} 0
+malachite_consensus_block_tx_count_bucket{le="512.0"} 0
+malachite_consensus_block_tx_count_bucket{le="544.0"} 0
+malachite_consensus_block_tx_count_bucket{le="576.0"} 0
+malachite_consensus_block_tx_count_bucket{le="608.0"} 0
+malachite_consensus_block_tx_count_bucket{le="640.0"} 0
+malachite_consensus_block_tx_count_bucket{le="672.0"} 0
+malachite_consensus_block_tx_count_bucket{le="704.0"} 0
+malachite_consensus_block_tx_count_bucket{le="736.0"} 0
+malachite_consensus_block_tx_count_bucket{le="768.0"} 0
+malachite_consensus_block_tx_count_bucket{le="800.0"} 0
+malachite_consensus_block_tx_count_bucket{le="832.0"} 0
+malachite_consensus_block_tx_count_bucket{le="864.0"} 0
+malachite_consensus_block_tx_count_bucket{le="896.0"} 0
+malachite_consensus_block_tx_count_bucket{le="928.0"} 0
+malachite_consensus_block_tx_count_bucket{le="960.0"} 0
+malachite_consensus_block_tx_count_bucket{le="992.0"} 0
+malachite_consensus_block_tx_count_bucket{le="1024.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1056.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1088.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1120.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1152.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1184.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1216.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1248.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1280.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1312.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1344.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1376.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1408.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1440.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1472.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1504.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1536.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1568.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1600.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1632.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1664.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1696.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1728.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1760.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1792.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1824.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1856.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1888.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1920.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1952.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="1984.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2016.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2048.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2080.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2112.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2144.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2176.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2208.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2240.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2272.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2304.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2336.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2368.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2400.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2432.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2464.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2496.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2528.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2560.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2592.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2624.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2656.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2688.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2720.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2752.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2784.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2816.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2848.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2880.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2912.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2944.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="2976.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3008.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3040.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3072.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3104.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3136.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3168.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3200.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3232.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3264.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3296.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3328.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3360.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3392.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3424.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3456.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3488.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3520.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3552.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3584.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3616.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3648.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3680.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3712.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3744.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3776.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3808.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3840.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3872.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3904.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3936.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="3968.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="4000.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="4032.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="4064.0"} 1901
+malachite_consensus_block_tx_count_bucket{le="+Inf"} 1901
+# HELP malachite_consensus_block_size_bytes Size of each block in bytes.
+# TYPE malachite_consensus_block_size_bytes histogram
+malachite_consensus_block_size_bytes_sum 1988599854.0
+malachite_consensus_block_size_bytes_count 1901
+malachite_consensus_block_size_bytes_bucket{le="0.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="65536.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="131072.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="196608.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="262144.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="327680.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="393216.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="458752.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="524288.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="589824.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="655360.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="720896.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="786432.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="851968.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="917504.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="983040.0"} 0
+malachite_consensus_block_size_bytes_bucket{le="1048576.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1114112.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1179648.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1245184.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1310720.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1376256.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1441792.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1507328.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1572864.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1638400.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1703936.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1769472.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1835008.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1900544.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="1966080.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2031616.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2097152.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2162688.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2228224.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2293760.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2359296.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2424832.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2490368.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2555904.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2621440.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2686976.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2752512.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2818048.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2883584.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="2949120.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3014656.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3080192.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3145728.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3211264.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3276800.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3342336.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3407872.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3473408.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3538944.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3604480.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3670016.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3735552.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3801088.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3866624.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3932160.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="3997696.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4063232.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4128768.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4194304.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4259840.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4325376.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4390912.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4456448.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4521984.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4587520.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4653056.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4718592.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4784128.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4849664.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4915200.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="4980736.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5046272.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5111808.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5177344.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5242880.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5308416.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5373952.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5439488.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5505024.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5570560.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5636096.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5701632.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5767168.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5832704.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5898240.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="5963776.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6029312.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6094848.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6160384.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6225920.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6291456.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6356992.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6422528.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6488064.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6553600.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6619136.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6684672.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6750208.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6815744.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6881280.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="6946816.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7012352.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7077888.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7143424.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7208960.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7274496.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7340032.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7405568.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7471104.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7536640.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7602176.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7667712.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7733248.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7798784.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7864320.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7929856.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="7995392.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="8060928.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="8126464.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="8192000.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="8257536.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="8323072.0"} 1901
+malachite_consensus_block_size_bytes_bucket{le="+Inf"} 1901
+# HELP malachite_consensus_rounds_per_block Consensus rounds, ie. how many rounds did each block need to reach finalization.
+# TYPE malachite_consensus_rounds_per_block histogram
+malachite_consensus_rounds_per_block_sum 1901.0
+malachite_consensus_rounds_per_block_count 1901
+malachite_consensus_rounds_per_block_bucket{le="0.0"} 0
+malachite_consensus_rounds_per_block_bucket{le="1.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="2.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="3.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="4.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="5.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="6.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="7.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="8.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="9.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="10.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="11.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="12.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="13.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="14.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="15.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="16.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="17.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="18.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="19.0"} 1901
+malachite_consensus_rounds_per_block_bucket{le="+Inf"} 1901
+# HELP malachite_consensus_connected_peers Number of connected peers, ie. for each consensus node, how many peers is it connected to.
+# TYPE malachite_consensus_connected_peers gauge
+malachite_consensus_connected_peers 4
+# HELP malachite_consensus_height Current height.
+# TYPE malachite_consensus_height gauge
+malachite_consensus_height 1902
+# HELP malachite_consensus_round Current round.
+# TYPE malachite_consensus_round gauge
+malachite_consensus_round 0
+# HELP malachite_consensus_signature_verification_time Time taken to verify a signature, in seconds.
+# TYPE malachite_consensus_signature_verification_time histogram
+malachite_consensus_signature_verification_time_sum 12.267948857999969
+malachite_consensus_signature_verification_time_count 15644
+malachite_consensus_signature_verification_time_bucket{le="0.001"} 13798
+malachite_consensus_signature_verification_time_bucket{le="0.002"} 15516
+malachite_consensus_signature_verification_time_bucket{le="0.004"} 15606
+malachite_consensus_signature_verification_time_bucket{le="0.008"} 15642
+malachite_consensus_signature_verification_time_bucket{le="0.016"} 15644
+malachite_consensus_signature_verification_time_bucket{le="0.032"} 15644
+malachite_consensus_signature_verification_time_bucket{le="0.064"} 15644
+malachite_consensus_signature_verification_time_bucket{le="0.128"} 15644
+malachite_consensus_signature_verification_time_bucket{le="0.256"} 15644
+malachite_consensus_signature_verification_time_bucket{le="0.512"} 15644
+malachite_consensus_signature_verification_time_bucket{le="+Inf"} 15644
+# HELP malachite_gossip_mempool_topic_subscription_status Subscription status per known topic.
+# TYPE malachite_gossip_mempool_topic_subscription_status gauge
+malachite_gossip_mempool_topic_subscription_status{hash="/mempool"} 1
+# HELP malachite_gossip_mempool_topic_peers_counts Number of peers subscribed to each topic.
+# TYPE malachite_gossip_mempool_topic_peers_counts gauge
+malachite_gossip_mempool_topic_peers_counts{hash="/mempool"} 4
+# HELP malachite_gossip_mempool_invalid_messages_per_topic Number of invalid messages received for each topic.
+# TYPE malachite_gossip_mempool_invalid_messages_per_topic counter
+# HELP malachite_gossip_mempool_accepted_messages_per_topic Number of accepted messages received for each topic.
+# TYPE malachite_gossip_mempool_accepted_messages_per_topic counter
+# HELP malachite_gossip_mempool_ignored_messages_per_topic Number of ignored messages received for each topic.
+# TYPE malachite_gossip_mempool_ignored_messages_per_topic counter
+# HELP malachite_gossip_mempool_rejected_messages_per_topic Number of rejected messages received for each topic.
+# TYPE malachite_gossip_mempool_rejected_messages_per_topic counter
+# HELP malachite_gossip_mempool_mesh_peer_counts Number of peers in each topic in our mesh.
+# TYPE malachite_gossip_mempool_mesh_peer_counts gauge
+malachite_gossip_mempool_mesh_peer_counts{hash="/mempool"} 1
+# HELP malachite_gossip_mempool_mesh_peer_inclusion_events Number of times a peer gets added to our mesh for different reasons.
+# TYPE malachite_gossip_mempool_mesh_peer_inclusion_events counter
+malachite_gossip_mempool_mesh_peer_inclusion_events_total{hash="/mempool",reason="Random"} 0
+malachite_gossip_mempool_mesh_peer_inclusion_events_total{hash="/mempool",reason="Fanout"} 0
+malachite_gossip_mempool_mesh_peer_inclusion_events_total{hash="/mempool",reason="Subscribed"} 1
+# HELP malachite_gossip_mempool_mesh_peer_churn_events Number of times a peer gets removed from our mesh for different reasons.
+# TYPE malachite_gossip_mempool_mesh_peer_churn_events counter
+malachite_gossip_mempool_mesh_peer_churn_events_total{hash="/mempool",reason="BadScore"} 0
+# HELP malachite_gossip_mempool_topic_msg_sent_counts Number of gossip messages sent to each topic.
+# TYPE malachite_gossip_mempool_topic_msg_sent_counts counter
+# HELP malachite_gossip_mempool_topic_msg_published Number of gossip messages published to each topic.
+# TYPE malachite_gossip_mempool_topic_msg_published counter
+# HELP malachite_gossip_mempool_topic_msg_sent_bytes Bytes from gossip messages sent to each topic.
+# TYPE malachite_gossip_mempool_topic_msg_sent_bytes counter
+# HELP malachite_gossip_mempool_topic_msg_recv_counts_unfiltered Number of gossip messages received on each topic (without duplicates being filtered).
+# TYPE malachite_gossip_mempool_topic_msg_recv_counts_unfiltered counter
+# HELP malachite_gossip_mempool_topic_msg_recv_counts Number of gossip messages received on each topic (after duplicates have been filtered).
+# TYPE malachite_gossip_mempool_topic_msg_recv_counts counter
+# HELP malachite_gossip_mempool_topic_msg_recv_bytes Bytes received from gossip messages for each topic.
+# TYPE malachite_gossip_mempool_topic_msg_recv_bytes counter
+# HELP malachite_gossip_mempool_score_per_mesh Histogram of scores per mesh topic.
+# TYPE malachite_gossip_mempool_score_per_mesh histogram
+malachite_gossip_mempool_score_per_mesh_sum{hash="/mempool"} 0.0
+malachite_gossip_mempool_score_per_mesh_count{hash="/mempool"} 2270
+malachite_gossip_mempool_score_per_mesh_bucket{le="-16000.0",hash="/mempool"} 0
+malachite_gossip_mempool_score_per_mesh_bucket{le="-8000.0",hash="/mempool"} 0
+malachite_gossip_mempool_score_per_mesh_bucket{le="-4000.0",hash="/mempool"} 0
+malachite_gossip_mempool_score_per_mesh_bucket{le="-2000.0",hash="/mempool"} 0
+malachite_gossip_mempool_score_per_mesh_bucket{le="-1000.0",hash="/mempool"} 0
+malachite_gossip_mempool_score_per_mesh_bucket{le="0.0",hash="/mempool"} 2270
+malachite_gossip_mempool_score_per_mesh_bucket{le="1.0",hash="/mempool"} 2270
+malachite_gossip_mempool_score_per_mesh_bucket{le="10.0",hash="/mempool"} 2270
+malachite_gossip_mempool_score_per_mesh_bucket{le="100.0",hash="/mempool"} 2270
+malachite_gossip_mempool_score_per_mesh_bucket{le="+Inf",hash="/mempool"} 2270
+# HELP malachite_gossip_mempool_scoring_penalties Counter of types of scoring penalties given to peers.
+# TYPE malachite_gossip_mempool_scoring_penalties counter
+# HELP malachite_gossip_mempool_peers_per_protocol Number of connected peers by protocol type.
+# TYPE malachite_gossip_mempool_peers_per_protocol gauge
+malachite_gossip_mempool_peers_per_protocol{protocol="Gossipsubv1_1"} 6
+# HELP malachite_gossip_mempool_heartbeat_duration Histogram of observed heartbeat durations.
+# TYPE malachite_gossip_mempool_heartbeat_duration histogram
+malachite_gossip_mempool_heartbeat_duration_sum 0.0
+malachite_gossip_mempool_heartbeat_duration_count 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="0.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="50.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="100.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="150.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="200.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="250.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="300.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="350.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="400.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="450.0"} 2270
+malachite_gossip_mempool_heartbeat_duration_bucket{le="+Inf"} 2270
+# HELP malachite_gossip_mempool_topic_iwant_msgs Number of times we have decided an IWANT is required for this topic.
+# TYPE malachite_gossip_mempool_topic_iwant_msgs counter
+# HELP malachite_gossip_mempool_memcache_misses Number of times a message is not found in the duplicate cache when validating.
+# TYPE malachite_gossip_mempool_memcache_misses counter
+malachite_gossip_mempool_memcache_misses_total 0
+# HELP malachite_gossip_mempool_libp2p_bandwidth_bytes Bandwidth usage by direction and transport protocols.
+# TYPE malachite_gossip_mempool_libp2p_bandwidth_bytes counter
+# UNIT malachite_gossip_mempool_libp2p_bandwidth_bytes bytes
+malachite_gossip_mempool_libp2p_bandwidth_bytes_total{protocols="/ip4/udp/quic-v1",direction="Inbound"} 194112
+malachite_gossip_mempool_libp2p_bandwidth_bytes_total{protocols="/ip4/udp/quic-v1",direction="Outbound"} 194127
+# HELP malachite_gossip_mempool_libp2p_gossipsub_messages Number of messages received.
+# TYPE malachite_gossip_mempool_libp2p_gossipsub_messages counter
+malachite_gossip_mempool_libp2p_gossipsub_messages_total 0
+# HELP malachite_gossip_mempool_libp2p_identify_errors Number of errors while attempting to identify the remote.
+# TYPE malachite_gossip_mempool_libp2p_identify_errors counter
+malachite_gossip_mempool_libp2p_identify_errors_total 0
+# HELP malachite_gossip_mempool_libp2p_identify_pushed Number of times identification information of the local node has been actively pushed to a peer..
+# TYPE malachite_gossip_mempool_libp2p_identify_pushed counter
+malachite_gossip_mempool_libp2p_identify_pushed_total 0
+# HELP malachite_gossip_mempool_libp2p_identify_received Number of times identification information has been received from a peer.
+# TYPE malachite_gossip_mempool_libp2p_identify_received counter
+malachite_gossip_mempool_libp2p_identify_received_total 50
+# HELP malachite_gossip_mempool_libp2p_identify_sent Number of times identification information of the local node has been sent to a peer in response to an identification request.
+# TYPE malachite_gossip_mempool_libp2p_identify_sent counter
+malachite_gossip_mempool_libp2p_identify_sent_total 50
+# HELP malachite_gossip_mempool_libp2p_identify_remote_protocols Number of connected nodes supporting a specific protocol, with "unrecognized" for each peer supporting one or more unrecognized protocols
+# TYPE malachite_gossip_mempool_libp2p_identify_remote_protocols gauge
+malachite_gossip_mempool_libp2p_identify_remote_protocols{protocol="/ipfs/id/1.0.0"} 4
+malachite_gossip_mempool_libp2p_identify_remote_protocols{protocol="unrecognized"} 4
+malachite_gossip_mempool_libp2p_identify_remote_protocols{protocol="/ipfs/ping/1.0.0"} 4
+malachite_gossip_mempool_libp2p_identify_remote_protocols{protocol="/ipfs/id/push/1.0.0"} 4
+# HELP malachite_gossip_mempool_libp2p_identify_remote_listen_addresses Number of connected nodes advertising a specific listen address
+# TYPE malachite_gossip_mempool_libp2p_identify_remote_listen_addresses gauge
+malachite_gossip_mempool_libp2p_identify_remote_listen_addresses{listen_address="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_mempool_libp2p_identify_local_observed_addresses Number of connected nodes observing the local node at a specific address
+# TYPE malachite_gossip_mempool_libp2p_identify_local_observed_addresses gauge
+malachite_gossip_mempool_libp2p_identify_local_observed_addresses{observed_address="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_mempool_libp2p_ping_rtt_seconds Round-trip time sending a 'ping' and receiving a 'pong'.
+# TYPE malachite_gossip_mempool_libp2p_ping_rtt_seconds histogram
+# UNIT malachite_gossip_mempool_libp2p_ping_rtt_seconds seconds
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_sum 2.5816903039999929
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_count 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.001"} 2321
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.002"} 2501
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.004"} 2593
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.008"} 2709
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.016"} 2747
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.032"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.064"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.128"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.256"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="0.512"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="1.024"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="2.048"} 2754
+malachite_gossip_mempool_libp2p_ping_rtt_seconds_bucket{le="+Inf"} 2754
+# HELP malachite_gossip_mempool_libp2p_ping_failure Failure while sending a 'ping' or receiving a 'pong'.
+# TYPE malachite_gossip_mempool_libp2p_ping_failure counter
+# HELP malachite_gossip_mempool_libp2p_swarm_connections_incoming Number of incoming connections per address stack.
+# TYPE malachite_gossip_mempool_libp2p_swarm_connections_incoming counter
+malachite_gossip_mempool_libp2p_swarm_connections_incoming_total{protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_mempool_libp2p_swarm_connections_incoming_error Number of incoming connection errors.
+# TYPE malachite_gossip_mempool_libp2p_swarm_connections_incoming_error counter
+# HELP malachite_gossip_mempool_libp2p_swarm_new_listen_addr Number of new listen addresses.
+# TYPE malachite_gossip_mempool_libp2p_swarm_new_listen_addr counter
+# HELP malachite_gossip_mempool_libp2p_swarm_expired_listen_addr Number of expired listen addresses.
+# TYPE malachite_gossip_mempool_libp2p_swarm_expired_listen_addr counter
+# HELP malachite_gossip_mempool_libp2p_swarm_external_addr_candidates Number of new external address candidates.
+# TYPE malachite_gossip_mempool_libp2p_swarm_external_addr_candidates counter
+malachite_gossip_mempool_libp2p_swarm_external_addr_candidates_total{protocols="/ip4/udp/quic-v1"} 8
+# HELP malachite_gossip_mempool_libp2p_swarm_external_addr_confirmed Number of confirmed external addresses.
+# TYPE malachite_gossip_mempool_libp2p_swarm_external_addr_confirmed counter
+# HELP malachite_gossip_mempool_libp2p_swarm_external_addr_expired Number of expired external addresses.
+# TYPE malachite_gossip_mempool_libp2p_swarm_external_addr_expired counter
+# HELP malachite_gossip_mempool_libp2p_swarm_listener_closed Number of listeners closed.
+# TYPE malachite_gossip_mempool_libp2p_swarm_listener_closed counter
+# HELP malachite_gossip_mempool_libp2p_swarm_listener_error Number of listener errors.
+# TYPE malachite_gossip_mempool_libp2p_swarm_listener_error counter
+malachite_gossip_mempool_libp2p_swarm_listener_error_total 0
+# HELP malachite_gossip_mempool_libp2p_swarm_dial_attempt Number of dial attempts.
+# TYPE malachite_gossip_mempool_libp2p_swarm_dial_attempt counter
+malachite_gossip_mempool_libp2p_swarm_dial_attempt_total 0
+# HELP malachite_gossip_mempool_libp2p_swarm_outgoing_connection_error Number outgoing connection errors.
+# TYPE malachite_gossip_mempool_libp2p_swarm_outgoing_connection_error counter
+# HELP malachite_gossip_mempool_libp2p_swarm_connections_established Number of connections established.
+# TYPE malachite_gossip_mempool_libp2p_swarm_connections_established counter
+malachite_gossip_mempool_libp2p_swarm_connections_established_total{role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_established_total{role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration Time it took (locally) to establish connections.
+# TYPE malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration histogram
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_sum{role="Dialer",protocols="/ip4/udp/quic-v1"} 0.071798374
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_count{role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.01",role="Dialer",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.015",role="Dialer",protocols="/ip4/udp/quic-v1"} 1
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.0225",role="Dialer",protocols="/ip4/udp/quic-v1"} 3
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.03375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.050625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.0759375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.11390625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.170859375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.2562890625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.38443359375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.576650390625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.8649755859375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="1.29746337890625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="1.946195068359375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="2.9192926025390628",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="4.378938903808594",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="6.568408355712891",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="9.852612533569337",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="14.778918800354005",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="22.168378200531007",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="+Inf",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_sum{role="Listener",protocols="/ip4/udp/quic-v1"} 0.09319166599999999
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_count{role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.01",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.015",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.0225",role="Listener",protocols="/ip4/udp/quic-v1"} 3
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.03375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.050625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.0759375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.11390625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.170859375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.2562890625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.38443359375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.576650390625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="0.8649755859375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="1.29746337890625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="1.946195068359375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="2.9192926025390628",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="4.378938903808594",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="6.568408355712891",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="9.852612533569337",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="14.778918800354005",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="22.168378200531007",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_mempool_libp2p_swarm_connections_establishment_duration_bucket{le="+Inf",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds Time a connection was alive.
+# TYPE malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds histogram
+# UNIT malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds seconds
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_sum{cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 120.022096583
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_count{cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="0.01",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="0.03",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="0.09",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="0.27",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="0.81",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="2.43",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="7.29",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="21.87",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="65.61",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="196.83",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="590.49",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="1771.47",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="5314.41",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="15943.23",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="47829.69",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="143489.07",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="430467.21",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="1291401.6300000002",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="3874204.89",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="11622614.67",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_mempool_libp2p_swarm_connections_duration_seconds_bucket{le="+Inf",cause="KeepAliveTimeout",role="Listener",protocols="/ip4/udp/quic-v1"} 2
+# HELP malachite_gossip_consensus_topic_subscription_status Subscription status per known topic.
+# TYPE malachite_gossip_consensus_topic_subscription_status gauge
+malachite_gossip_consensus_topic_subscription_status{hash="/consensus"} 1
+malachite_gossip_consensus_topic_subscription_status{hash="/proposal_parts"} 1
+# HELP malachite_gossip_consensus_topic_peers_counts Number of peers subscribed to each topic.
+# TYPE malachite_gossip_consensus_topic_peers_counts gauge
+malachite_gossip_consensus_topic_peers_counts{hash="/consensus"} 4
+malachite_gossip_consensus_topic_peers_counts{hash="/proposal_parts"} 4
+# HELP malachite_gossip_consensus_invalid_messages_per_topic Number of invalid messages received for each topic.
+# TYPE malachite_gossip_consensus_invalid_messages_per_topic counter
+# HELP malachite_gossip_consensus_accepted_messages_per_topic Number of accepted messages received for each topic.
+# TYPE malachite_gossip_consensus_accepted_messages_per_topic counter
+# HELP malachite_gossip_consensus_ignored_messages_per_topic Number of ignored messages received for each topic.
+# TYPE malachite_gossip_consensus_ignored_messages_per_topic counter
+# HELP malachite_gossip_consensus_rejected_messages_per_topic Number of rejected messages received for each topic.
+# TYPE malachite_gossip_consensus_rejected_messages_per_topic counter
+# HELP malachite_gossip_consensus_mesh_peer_counts Number of peers in each topic in our mesh.
+# TYPE malachite_gossip_consensus_mesh_peer_counts gauge
+malachite_gossip_consensus_mesh_peer_counts{hash="/consensus"} 1
+malachite_gossip_consensus_mesh_peer_counts{hash="/proposal_parts"} 1
+# HELP malachite_gossip_consensus_mesh_peer_inclusion_events Number of times a peer gets added to our mesh for different reasons.
+# TYPE malachite_gossip_consensus_mesh_peer_inclusion_events counter
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/consensus",reason="Subscribed"} 1
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/consensus",reason="Random"} 0
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/proposal_parts",reason="Fanout"} 0
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/proposal_parts",reason="Random"} 0
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/proposal_parts",reason="Subscribed"} 1
+malachite_gossip_consensus_mesh_peer_inclusion_events_total{hash="/consensus",reason="Fanout"} 0
+# HELP malachite_gossip_consensus_mesh_peer_churn_events Number of times a peer gets removed from our mesh for different reasons.
+# TYPE malachite_gossip_consensus_mesh_peer_churn_events counter
+malachite_gossip_consensus_mesh_peer_churn_events_total{hash="/proposal_parts",reason="BadScore"} 0
+malachite_gossip_consensus_mesh_peer_churn_events_total{hash="/consensus",reason="BadScore"} 0
+# HELP malachite_gossip_consensus_topic_msg_sent_counts Number of gossip messages sent to each topic.
+# TYPE malachite_gossip_consensus_topic_msg_sent_counts counter
+malachite_gossip_consensus_topic_msg_sent_counts_total{hash="/consensus"} 29268
+malachite_gossip_consensus_topic_msg_sent_counts_total{hash="/proposal_parts"} 31982
+# HELP malachite_gossip_consensus_topic_msg_published Number of gossip messages published to each topic.
+# TYPE malachite_gossip_consensus_topic_msg_published counter
+malachite_gossip_consensus_topic_msg_published_total{hash="/proposal_parts"} 4572
+malachite_gossip_consensus_topic_msg_published_total{hash="/consensus"} 4183
+# HELP malachite_gossip_consensus_topic_msg_sent_bytes Bytes from gossip messages sent to each topic.
+# TYPE malachite_gossip_consensus_topic_msg_sent_bytes counter
+malachite_gossip_consensus_topic_msg_sent_bytes_total{hash="/proposal_parts"} 2795430134
+malachite_gossip_consensus_topic_msg_sent_bytes_total{hash="/consensus"} 11287430
+# HELP malachite_gossip_consensus_topic_msg_recv_counts_unfiltered Number of gossip messages received on each topic (without duplicates being filtered).
+# TYPE malachite_gossip_consensus_topic_msg_recv_counts_unfiltered counter
+malachite_gossip_consensus_topic_msg_recv_counts_unfiltered_total{hash="/consensus"} 28875
+malachite_gossip_consensus_topic_msg_recv_counts_unfiltered_total{hash="/proposal_parts"} 31809
+# HELP malachite_gossip_consensus_topic_msg_recv_counts Number of gossip messages received on each topic (after duplicates have been filtered).
+# TYPE malachite_gossip_consensus_topic_msg_recv_counts counter
+malachite_gossip_consensus_topic_msg_recv_counts_total{hash="/proposal_parts"} 18246
+malachite_gossip_consensus_topic_msg_recv_counts_total{hash="/consensus"} 16728
+# HELP malachite_gossip_consensus_topic_msg_recv_bytes Bytes received from gossip messages for each topic.
+# TYPE malachite_gossip_consensus_topic_msg_recv_bytes counter
+malachite_gossip_consensus_topic_msg_recv_bytes_total{hash="/proposal_parts"} 2792411598
+malachite_gossip_consensus_topic_msg_recv_bytes_total{hash="/consensus"} 11133811
+# HELP malachite_gossip_consensus_score_per_mesh Histogram of scores per mesh topic.
+# TYPE malachite_gossip_consensus_score_per_mesh histogram
+malachite_gossip_consensus_score_per_mesh_sum{hash="/consensus"} 0.0
+malachite_gossip_consensus_score_per_mesh_count{hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="-16000.0",hash="/consensus"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-8000.0",hash="/consensus"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-4000.0",hash="/consensus"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-2000.0",hash="/consensus"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-1000.0",hash="/consensus"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="0.0",hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="1.0",hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="10.0",hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="100.0",hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="+Inf",hash="/consensus"} 2270
+malachite_gossip_consensus_score_per_mesh_sum{hash="/proposal_parts"} 0.0
+malachite_gossip_consensus_score_per_mesh_count{hash="/proposal_parts"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="-16000.0",hash="/proposal_parts"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-8000.0",hash="/proposal_parts"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-4000.0",hash="/proposal_parts"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-2000.0",hash="/proposal_parts"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="-1000.0",hash="/proposal_parts"} 0
+malachite_gossip_consensus_score_per_mesh_bucket{le="0.0",hash="/proposal_parts"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="1.0",hash="/proposal_parts"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="10.0",hash="/proposal_parts"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="100.0",hash="/proposal_parts"} 2270
+malachite_gossip_consensus_score_per_mesh_bucket{le="+Inf",hash="/proposal_parts"} 2270
+# HELP malachite_gossip_consensus_scoring_penalties Counter of types of scoring penalties given to peers.
+# TYPE malachite_gossip_consensus_scoring_penalties counter
+# HELP malachite_gossip_consensus_peers_per_protocol Number of connected peers by protocol type.
+# TYPE malachite_gossip_consensus_peers_per_protocol gauge
+malachite_gossip_consensus_peers_per_protocol{protocol="Gossipsubv1_1"} 8
+# HELP malachite_gossip_consensus_heartbeat_duration Histogram of observed heartbeat durations.
+# TYPE malachite_gossip_consensus_heartbeat_duration histogram
+malachite_gossip_consensus_heartbeat_duration_sum 0.0
+malachite_gossip_consensus_heartbeat_duration_count 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="0.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="50.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="100.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="150.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="200.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="250.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="300.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="350.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="400.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="450.0"} 2270
+malachite_gossip_consensus_heartbeat_duration_bucket{le="+Inf"} 2270
+# HELP malachite_gossip_consensus_topic_iwant_msgs Number of times we have decided an IWANT is required for this topic.
+# TYPE malachite_gossip_consensus_topic_iwant_msgs counter
+malachite_gossip_consensus_topic_iwant_msgs_total{hash="/proposal_parts"} 16
+# HELP malachite_gossip_consensus_memcache_misses Number of times a message is not found in the duplicate cache when validating.
+# TYPE malachite_gossip_consensus_memcache_misses counter
+malachite_gossip_consensus_memcache_misses_total 0
+# HELP malachite_gossip_consensus_libp2p_bandwidth_bytes Bandwidth usage by direction and transport protocols.
+# TYPE malachite_gossip_consensus_libp2p_bandwidth_bytes counter
+# UNIT malachite_gossip_consensus_libp2p_bandwidth_bytes bytes
+malachite_gossip_consensus_libp2p_bandwidth_bytes_total{protocols="/ip4/udp/quic-v1",direction="Outbound"} 2811562337
+malachite_gossip_consensus_libp2p_bandwidth_bytes_total{protocols="/ip4/udp/quic-v1",direction="Inbound"} 2808387194
+# HELP malachite_gossip_consensus_libp2p_gossipsub_messages Number of messages received.
+# TYPE malachite_gossip_consensus_libp2p_gossipsub_messages counter
+malachite_gossip_consensus_libp2p_gossipsub_messages_total 34974
+# HELP malachite_gossip_consensus_libp2p_identify_errors Number of errors while attempting to identify the remote.
+# TYPE malachite_gossip_consensus_libp2p_identify_errors counter
+malachite_gossip_consensus_libp2p_identify_errors_total 0
+# HELP malachite_gossip_consensus_libp2p_identify_pushed Number of times identification information of the local node has been actively pushed to a peer..
+# TYPE malachite_gossip_consensus_libp2p_identify_pushed counter
+malachite_gossip_consensus_libp2p_identify_pushed_total 0
+# HELP malachite_gossip_consensus_libp2p_identify_received Number of times identification information has been received from a peer.
+# TYPE malachite_gossip_consensus_libp2p_identify_received counter
+malachite_gossip_consensus_libp2p_identify_received_total 64
+# HELP malachite_gossip_consensus_libp2p_identify_sent Number of times identification information of the local node has been sent to a peer in response to an identification request.
+# TYPE malachite_gossip_consensus_libp2p_identify_sent counter
+malachite_gossip_consensus_libp2p_identify_sent_total 64
+# HELP malachite_gossip_consensus_libp2p_identify_remote_protocols Number of connected nodes supporting a specific protocol, with "unrecognized" for each peer supporting one or more unrecognized protocols
+# TYPE malachite_gossip_consensus_libp2p_identify_remote_protocols gauge
+malachite_gossip_consensus_libp2p_identify_remote_protocols{protocol="/ipfs/id/push/1.0.0"} 4
+malachite_gossip_consensus_libp2p_identify_remote_protocols{protocol="/ipfs/ping/1.0.0"} 4
+malachite_gossip_consensus_libp2p_identify_remote_protocols{protocol="unrecognized"} 4
+malachite_gossip_consensus_libp2p_identify_remote_protocols{protocol="/ipfs/id/1.0.0"} 4
+# HELP malachite_gossip_consensus_libp2p_identify_remote_listen_addresses Number of connected nodes advertising a specific listen address
+# TYPE malachite_gossip_consensus_libp2p_identify_remote_listen_addresses gauge
+malachite_gossip_consensus_libp2p_identify_remote_listen_addresses{listen_address="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_consensus_libp2p_identify_local_observed_addresses Number of connected nodes observing the local node at a specific address
+# TYPE malachite_gossip_consensus_libp2p_identify_local_observed_addresses gauge
+malachite_gossip_consensus_libp2p_identify_local_observed_addresses{observed_address="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_consensus_libp2p_ping_rtt_seconds Round-trip time sending a 'ping' and receiving a 'pong'.
+# TYPE malachite_gossip_consensus_libp2p_ping_rtt_seconds histogram
+# UNIT malachite_gossip_consensus_libp2p_ping_rtt_seconds seconds
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_sum 3.3778518720000147
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_count 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.001"} 3100
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.002"} 3317
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.004"} 3436
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.008"} 3570
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.016"} 3634
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.032"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.064"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.128"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.256"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="0.512"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="1.024"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="2.048"} 3640
+malachite_gossip_consensus_libp2p_ping_rtt_seconds_bucket{le="+Inf"} 3640
+# HELP malachite_gossip_consensus_libp2p_ping_failure Failure while sending a 'ping' or receiving a 'pong'.
+# TYPE malachite_gossip_consensus_libp2p_ping_failure counter
+# HELP malachite_gossip_consensus_libp2p_swarm_connections_incoming Number of incoming connections per address stack.
+# TYPE malachite_gossip_consensus_libp2p_swarm_connections_incoming counter
+malachite_gossip_consensus_libp2p_swarm_connections_incoming_total{protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_consensus_libp2p_swarm_connections_incoming_error Number of incoming connection errors.
+# TYPE malachite_gossip_consensus_libp2p_swarm_connections_incoming_error counter
+# HELP malachite_gossip_consensus_libp2p_swarm_new_listen_addr Number of new listen addresses.
+# TYPE malachite_gossip_consensus_libp2p_swarm_new_listen_addr counter
+# HELP malachite_gossip_consensus_libp2p_swarm_expired_listen_addr Number of expired listen addresses.
+# TYPE malachite_gossip_consensus_libp2p_swarm_expired_listen_addr counter
+# HELP malachite_gossip_consensus_libp2p_swarm_external_addr_candidates Number of new external address candidates.
+# TYPE malachite_gossip_consensus_libp2p_swarm_external_addr_candidates counter
+malachite_gossip_consensus_libp2p_swarm_external_addr_candidates_total{protocols="/ip4/udp/quic-v1"} 8
+# HELP malachite_gossip_consensus_libp2p_swarm_external_addr_confirmed Number of confirmed external addresses.
+# TYPE malachite_gossip_consensus_libp2p_swarm_external_addr_confirmed counter
+# HELP malachite_gossip_consensus_libp2p_swarm_external_addr_expired Number of expired external addresses.
+# TYPE malachite_gossip_consensus_libp2p_swarm_external_addr_expired counter
+# HELP malachite_gossip_consensus_libp2p_swarm_listener_closed Number of listeners closed.
+# TYPE malachite_gossip_consensus_libp2p_swarm_listener_closed counter
+# HELP malachite_gossip_consensus_libp2p_swarm_listener_error Number of listener errors.
+# TYPE malachite_gossip_consensus_libp2p_swarm_listener_error counter
+malachite_gossip_consensus_libp2p_swarm_listener_error_total 0
+# HELP malachite_gossip_consensus_libp2p_swarm_dial_attempt Number of dial attempts.
+# TYPE malachite_gossip_consensus_libp2p_swarm_dial_attempt counter
+malachite_gossip_consensus_libp2p_swarm_dial_attempt_total 0
+# HELP malachite_gossip_consensus_libp2p_swarm_outgoing_connection_error Number outgoing connection errors.
+# TYPE malachite_gossip_consensus_libp2p_swarm_outgoing_connection_error counter
+# HELP malachite_gossip_consensus_libp2p_swarm_connections_established Number of connections established.
+# TYPE malachite_gossip_consensus_libp2p_swarm_connections_established counter
+malachite_gossip_consensus_libp2p_swarm_connections_established_total{role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_established_total{role="Listener",protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration Time it took (locally) to establish connections.
+# TYPE malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration histogram
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_sum{role="Dialer",protocols="/ip4/udp/quic-v1"} 0.104386458
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_count{role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.01",role="Dialer",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.015",role="Dialer",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.0225",role="Dialer",protocols="/ip4/udp/quic-v1"} 2
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.03375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.050625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.0759375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.11390625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.170859375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.2562890625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.38443359375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.576650390625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.8649755859375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="1.29746337890625",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="1.946195068359375",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="2.9192926025390628",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="4.378938903808594",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="6.568408355712891",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="9.852612533569337",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="14.778918800354005",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="22.168378200531007",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="+Inf",role="Dialer",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_sum{role="Listener",protocols="/ip4/udp/quic-v1"} 0.094114667
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_count{role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.01",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.015",role="Listener",protocols="/ip4/udp/quic-v1"} 0
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.0225",role="Listener",protocols="/ip4/udp/quic-v1"} 1
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.03375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.050625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.0759375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.11390625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.170859375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.2562890625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.38443359375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.576650390625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="0.8649755859375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="1.29746337890625",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="1.946195068359375",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="2.9192926025390628",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="4.378938903808594",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="6.568408355712891",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="9.852612533569337",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="14.778918800354005",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="22.168378200531007",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+malachite_gossip_consensus_libp2p_swarm_connections_establishment_duration_bucket{le="+Inf",role="Listener",protocols="/ip4/udp/quic-v1"} 4
+# HELP malachite_gossip_consensus_libp2p_swarm_connections_duration_seconds Time a connection was alive.
+# TYPE malachite_gossip_consensus_libp2p_swarm_connections_duration_seconds histogram
+# UNIT malachite_gossip_consensus_libp2p_swarm_connections_duration_seconds seconds
+# EOF
