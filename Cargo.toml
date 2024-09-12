@@ -13,4 +13,4 @@ pluralizer = "0.4.0"
 prometheus-parse = "0.2.5"
 reqwest = "0.12.7"
 textplots = "0.8.6"
-tokio = { version = "1.40.0", features = ["full"] }
+tokio = { version = "1.40.0", features = ["macros","rt", "net"] }
