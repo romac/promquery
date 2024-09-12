@@ -3,6 +3,7 @@ use core::f32;
 use clap::Parser;
 use color_eyre::eyre::{eyre, Result};
 use derive_more::Display;
+use ordered_float::OrderedFloat;
 use owo_colors::OwoColorize;
 use pluralizer::pluralize;
 use prometheus_parse::{HistogramCount, Sample, Scrape, Value};
@@ -57,6 +58,8 @@ fn process_metric(metric: &str, scrape: &mut Scrape) -> Result<()> {
     }
 
     let mut exact_samples = get_exact_samples(metric, scrape);
+
+    // If the metric is a counter, its name is postfixed with `_total`
     if exact_samples.is_empty() {
         exact_samples = get_exact_samples(&format!("{metric}_total"), scrape);
     }
@@ -138,7 +141,10 @@ fn show_histogram(sample: &Sample, scrape: &Scrape) -> Result<()> {
     let (count, sum) = get_histogram_stats(sample, scrape)?;
 
     print_histogram_stats(count, sum, data.len());
-    plot_histogram(data);
+
+    if !data.is_empty() {
+        plot_histogram(data);
+    }
 
     Ok(())
 }
@@ -187,19 +193,10 @@ fn plot_histogram(data: &[HistogramCount]) {
 }
 
 fn get_min_max(points: &[(f32, f32)]) -> (f32, f32) {
-    let min = points
-        .iter()
-        .map(|(x, _)| *x)
-        .min_by(|a, b| a.partial_cmp(b).unwrap())
-        .unwrap();
+    let min = points.iter().map(|(x, _)| OrderedFloat(*x)).min().unwrap();
+    let max = points.iter().map(|(x, _)| OrderedFloat(*x)).max().unwrap();
 
-    let max = points
-        .iter()
-        .map(|(x, _)| *x)
-        .max_by(|a, b| a.partial_cmp(b).unwrap())
-        .unwrap();
-
-    (min, max)
+    (min.into_inner(), max.into_inner())
 }
 
 fn value_to_num(value: &Value) -> f64 {
