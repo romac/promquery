@@ -173,7 +173,7 @@ fn print_histogram_stats(count: f64, sum: f64, bucket_count: usize) {
         "Histogram".bold(),
         format!("{count}").green(),
         format!("{sum:.2}").green(),
-        format!("{mean:.2}").green(),
+        format!("{mean:.3}").green(),
         format!("{}", bucket_count).green()
     );
 }
