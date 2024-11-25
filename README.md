@@ -1,6 +1,28 @@
 # PromQuery
 
-Query and visualize Prometheus metrics from the command-line.
+Query and visualize instant values of Prometheus metrics from the command-line.
+
+## Install
+
+With [`cargo-binstall`](https://github.com/cargo-bins/cargo-binstall):
+
+```
+$ cargo binstall promquery
+```
+
+From source via crates.io:
+
+```
+$ cargo install promquery
+```
+
+From source via Git:
+
+```
+$ git clone https://github.com/romac/promquery
+$ cd promquery
+$ cargo install --path .
+```
 
 ## Example
 
