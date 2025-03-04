@@ -7,15 +7,15 @@ use ordered_float::OrderedFloat;
 use owo_colors::OwoColorize;
 use pluralizer::pluralize;
 use prometheus_parse::{HistogramCount, Sample, Scrape, Value};
-use reqwest::Url;
 use textplots::Plot;
+use ureq::http::Uri;
 
 /// Query and visualize instant values of Prometheus metrics
 #[derive(Debug, Parser)]
 #[command(version, about, long_about = None)]
 pub struct PromQuery {
-    /// URL of the Prometheus server, e.g. http://localhost:9090
-    pub url: Url,
+    /// URL of the Prometheus server, without `/metrics`(e.g. http://localhost:9090)
+    pub url: Uri,
 
     /// Name of the metric to query
     pub metric: String,
@@ -25,14 +25,13 @@ pub struct PromQuery {
     pub show_plot: bool,
 }
 
-#[tokio::main(flavor = "current_thread")]
-async fn main() -> Result<()> {
+fn main() -> Result<()> {
     color_eyre::install()?;
 
     let mut query = PromQuery::parse();
-    ensure_metrics_path(&mut query.url);
+    ensure_metrics_path(&mut query.url)?;
 
-    let text = fetch_metrics(&query.url).await?;
+    let text = fetch_metrics(&query.url)?;
     let mut scrape = parse_metrics(&text)?;
 
     process_metric(&query.metric, query.show_plot, &mut scrape)?;
@@ -40,14 +39,21 @@ async fn main() -> Result<()> {
     Ok(())
 }
 
-fn ensure_metrics_path(url: &mut Url) {
-    if url.path() != "/metrics" {
-        url.set_path("/metrics");
+fn ensure_metrics_path(uri: &mut Uri) -> Result<()> {
+    use ureq::http::uri;
+
+    if uri.path() == "/" {
+        *uri = uri::Builder::from(uri.clone())
+            .path_and_query("/metrics")
+            .build()?
     }
+
+    Ok(())
 }
 
-async fn fetch_metrics(url: &Url) -> Result<String> {
-    Ok(reqwest::get(url.clone()).await?.text().await?)
+fn fetch_metrics(uri: &Uri) -> Result<String> {
+    let mut response = ureq::get(uri).call()?;
+    Ok(response.body_mut().read_to_string()?)
 }
 
 fn parse_metrics(text: &str) -> Result<Scrape> {

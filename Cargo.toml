@@ -15,6 +15,5 @@ ordered-float = "5"
 owo-colors = "4"
 pluralizer = "0.5.0"
 prometheus-parse = "0.2.5"
-reqwest = "0.12.7"
+ureq = "3"
 textplots = "0.8.6"
-tokio = { version = "1.40.0", features = ["macros","rt", "net"] }
