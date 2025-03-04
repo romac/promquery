@@ -1,6 +1,6 @@
 [package]
 name = "promquery"
-version = "1.0.0"
+version = "1.1.0"
 edition = "2021"
 repository = "https://github.com/romac/promquery"
 description = "Query and visualize Prometheus metrics from the command-line."
