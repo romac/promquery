@@ -24,6 +24,23 @@ $ cd promquery
 $ cargo install --path .
 ```
 
+## Usage
+
+```
+Query and visualize Prometheus metrics from the command-line.
+
+Usage: promquery [OPTIONS] <URL> <METRIC>
+
+Arguments:
+  <URL>     URL of the Prometheus server, e.g. http://localhost:9090
+  <METRIC>  Name of the metric to query
+
+Options:
+      --show-plot  Show a plot for some metric types (e.g. histograms)
+  -h, --help       Print help
+  -V, --version    Print version
+```
+
 ## Example
 
 ```
