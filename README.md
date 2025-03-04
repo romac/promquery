@@ -27,7 +27,7 @@ $ cargo install --path .
 ## Example
 
 ```
-$ promquery 'http://localhost:29000' malachite_consensus_time_per_block
+$ promquery 'http://localhost:29000' malachite_consensus_time_per_block --show-plot
 
 malachite_consensus_time_per_block
 Time taken to finalize a block, in seconds.
