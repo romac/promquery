@@ -8,12 +8,12 @@ authors = ["Romain Ruetschi <github@romac.me>"]
 license = "Apache-2.0"
 
 [dependencies]
-clap = { version = "4.5.17", features = ["derive"] }
+clap = { version = "4", features = ["derive"] }
 color-eyre = "0.6.3"
-derive_more = { version = "1.0.0", features = ["display"] }
-ordered-float = "4.2.2"
-owo-colors = "4.1.0"
-pluralizer = "0.4.0"
+derive_more = { version = "2", features = ["display"] }
+ordered-float = "5"
+owo-colors = "4"
+pluralizer = "0.5.0"
 prometheus-parse = "0.2.5"
 reqwest = "0.12.7"
 textplots = "0.8.6"
