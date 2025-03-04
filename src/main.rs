@@ -10,35 +10,44 @@ use prometheus_parse::{HistogramCount, Sample, Scrape, Value};
 use reqwest::Url;
 use textplots::Plot;
 
+/// Query and visualize instant values of Prometheus metrics
 #[derive(Debug, Parser)]
-pub struct Args {
+#[command(version, about, long_about = None)]
+pub struct PromQuery {
+    /// URL of the Prometheus server, e.g. http://localhost:9090
     pub url: Url,
+
+    /// Name of the metric to query
     pub metric: String,
+
+    /// Show a plot for some metric types (e.g. histograms)
+    #[arg(long)]
+    pub show_plot: bool,
 }
 
 #[tokio::main(flavor = "current_thread")]
 async fn main() -> Result<()> {
     color_eyre::install()?;
 
-    let args = Args::parse();
-    let url = ensure_metrics_path(args.url);
-    let text = fetch_metrics(url).await?;
+    let mut query = PromQuery::parse();
+    ensure_metrics_path(&mut query.url);
+
+    let text = fetch_metrics(&query.url).await?;
     let mut scrape = parse_metrics(&text)?;
 
-    process_metric(&args.metric, &mut scrape)?;
+    process_metric(&query.metric, query.show_plot, &mut scrape)?;
 
     Ok(())
 }
 
-fn ensure_metrics_path(mut url: Url) -> Url {
+fn ensure_metrics_path(url: &mut Url) {
     if url.path() != "/metrics" {
         url.set_path("/metrics");
     }
-    url
 }
 
-async fn fetch_metrics(url: Url) -> Result<String> {
-    Ok(reqwest::get(url).await?.text().await?)
+async fn fetch_metrics(url: &Url) -> Result<String> {
+    Ok(reqwest::get(url.clone()).await?.text().await?)
 }
 
 fn parse_metrics(text: &str) -> Result<Scrape> {
@@ -46,7 +55,7 @@ fn parse_metrics(text: &str) -> Result<Scrape> {
     prometheus_parse::Scrape::parse(lines).map_err(Into::into)
 }
 
-fn process_metric(metric: &str, scrape: &mut Scrape) -> Result<()> {
+fn process_metric(metric: &str, show_plot: bool, scrape: &mut Scrape) -> Result<()> {
     let doc = get_metric_doc(metric, scrape)?;
     print_metric_info(metric, doc);
 
@@ -67,7 +76,7 @@ fn process_metric(metric: &str, scrape: &mut Scrape) -> Result<()> {
     print_sample_count(&exact_samples);
 
     for (i, sample) in exact_samples.iter().enumerate() {
-        show_sample(i + 1, sample, scrape)?;
+        show_sample(i + 1, sample, scrape, show_plot)?;
     }
 
     Ok(())
@@ -102,14 +111,14 @@ fn print_sample_count(samples: &[&Sample]) {
     println!("{}\n", pluralize("sample", samples.len() as isize, true));
 }
 
-fn show_sample(i: usize, sample: &Sample, scrape: &Scrape) -> Result<()> {
+fn show_sample(i: usize, sample: &Sample, scrape: &Scrape, show_plot: bool) -> Result<()> {
     println!("{i}. {}", sample.timestamp.to_string().bright_white());
     print_labels(sample);
 
     match Type::of(&sample.value) {
         Type::Gauge => show_gauge(sample, scrape)?,
         Type::Counter => show_counter(sample, scrape)?,
-        Type::Histogram => show_histogram(sample, scrape)?,
+        Type::Histogram => show_histogram(sample, scrape, show_plot)?,
     }
 
     Ok(())
@@ -133,7 +142,7 @@ fn show_counter(sample: &Sample, _scrape: &Scrape) -> Result<()> {
     Ok(())
 }
 
-fn show_histogram(sample: &Sample, scrape: &Scrape) -> Result<()> {
+fn show_histogram(sample: &Sample, scrape: &Scrape, show_plot: bool) -> Result<()> {
     let Value::Histogram(data) = &sample.value else {
         panic!("Wrong type");
     };
@@ -142,7 +151,7 @@ fn show_histogram(sample: &Sample, scrape: &Scrape) -> Result<()> {
 
     print_histogram_stats(count, sum, data.len());
 
-    if !data.is_empty() {
+    if show_plot && !data.is_empty() {
         plot_histogram(data);
     }
 
